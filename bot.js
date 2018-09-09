@@ -5,7 +5,8 @@ const prefix = "/"
 
 client.on('ready', ready => {
   console.log('ready')
-  client.user.setStatus('dnd', 'AlphaBotsList') 
+  client.user.setStatus('dnd', 'Alpha Bots!')
+  client.user.setGame('Alpha Bots!')
 })
 
 client.on('message',async message => {
@@ -72,10 +73,12 @@ client.on('message',async message => {
         .setThumbnail(message.author.avatarURL)
         .setTitle('تقديم جديد:')
         .setDescription(`
-**# - اي دي البوت** : \`${id}\`
-**# - عدد السيرفرات والمستخدمين** : \`${count}
+**# - اي دي البوت** :
+\`${id}\`
+**# - عدد السيرفرات والمستخدمين** :
+\`${count}\`
 `)
-.addField('مواصفات البوت:', mwa9fat)
+.addField('مواصفات البوت :', mwa9fat)
 .setFooter(message.author.username, message.author.avatarURL)
 .setTimestamp()     
 acapply.send(embed)
