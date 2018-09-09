@@ -27,6 +27,17 @@ client.on('message',async message => {
       .then(collected => {
         collected.first().delete();
         id = collected.first().content;
+        let prefox;
+        msg.edit(':scroll: **| من فضلك اكتب برفكس بوتك الأن... :pencil2: **').then(msg => {
+  
+            message.channel.awaitMessages(filter, {
+              max: 1,
+              time: 90000,
+              errors: ['time']
+            })
+            .then(collected => {
+              collected.first().delete();
+              prefox = collected.first().content;
         let mwa9fat;
         msg.edit(':scroll: **| من فضلك اكتب مواصفات بوتك الأن... :pencil2: **').then(msg => {
   
@@ -73,6 +84,8 @@ client.on('message',async message => {
         .setDescription(`
 **# - اي دي البوت** :
 \`${id}\`
+**# - بريفكس البوت** :
+\`${prefox}\`
 **# - عدد السيرفرات والمستخدمين** :
 \`${count}\`
 `)
@@ -90,7 +103,14 @@ acapply.send(embed)
     });
 }
 );
-      })}});
+})
+}
+      )
+      }
+      )
+    }
+}
+)
 
 
 
