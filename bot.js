@@ -65,7 +65,7 @@ client.on('message',async message => {
           } // ${id} for bot id // ${mwa9fat} for bot features // ${count} for server and member count
           if(collected.first().content === 'نعم') {
             if(thisFalse === false) return;
-            msg.edit(':dove: **| Done :white_check_mark:, تم بنجاح نشر كودك في روم الاكواد**');
+            msg.edit(':white_check_mark: | **تم التقديم بنجاح**.');
             collected.first().delete();
            let embed = new Discord.RichEmbed()
         .setColor('#4CE782')
