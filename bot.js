@@ -71,7 +71,7 @@ client.on('message',async message => {
         .setColor('#4CE782')
         .setAuthor(message.author.tag, message.author.avatarURL)
         .setThumbnail(message.author.avatarURL)
-        .setTitle('تقديم جديد:')
+        .setTitle('تقديم جديد :')
         .setDescription(`
 **# - اي دي البوت** :
 \`${id}\`
