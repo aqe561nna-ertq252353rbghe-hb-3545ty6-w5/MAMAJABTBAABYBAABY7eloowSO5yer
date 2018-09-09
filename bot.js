@@ -12,8 +12,6 @@ client.on('ready', ready => {
 client.on('message',async message => {
     if(message.content.startsWith(prefix + "تقديم")) {
   if(!message.channel.guild) return message.reply(' ');
-    let rank = message.guild.member(message.author).roles.find('name', 'Admins');
-    if (!rank) return message.channel.send(':octagonal_sign: **| يجب ان يكون معك رتبة أدمن لأستخدام هذا الأمر**');
     let acapply = message.guild.channels.find(`name`, "تقديمات");
     if(!acapply) return message.channel.send(":x: لم اجد روم التقديمات");
       let filter = m => m.author.id === message.author.id;
